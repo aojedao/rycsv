@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+	<node pkg="kobuki_rycsv_control" type="kobuki_rycsv_key" name="kobuki_rycsv_key" output="screen">
+	 <param name="scale_linear" value="0.01" type="double"/>
+	 <param name="scale_angular" value="0.5" type="double"/>
+	 <remap from="turtle_teleop_keyboard/cmd_vel" to="/cmd_vel"/>
+	</node>
+</launch>

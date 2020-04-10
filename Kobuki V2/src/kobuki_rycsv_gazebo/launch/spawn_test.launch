@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	<param name="kobuki2_description" command="cat '$(find kobuki_rycsv_description)/urdf/kobuki_rycsv.xacro'" />
+
+
+	<node name="kobuki2_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
+	      args="-urdf -param kobuki2_description -model kobuki_rycsv " />
+	
+</launch>
