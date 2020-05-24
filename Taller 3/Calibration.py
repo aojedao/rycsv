@@ -40,7 +40,17 @@ for fname in images:
 
 ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, gray.shape[::-1],None,None)
 
-
+print("La matriz es")
+print(mtx)
+print()
+print("El vector de distorsión es es")
+print(dist)
+print()
+print("El vector de traslacion es")
+print(tvecs[29])
+print()
+print("El vector de rotacion es")
+print(rvecs[29])
 img = cv2.imread('Webcam/30.jpg')
 h,  w = img.shape[:2]
 newcameramtx, roi=cv2.getOptimalNewCameraMatrix(mtx,dist,(w,h),1,(w,h))
