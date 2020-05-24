@@ -1,0 +1,26 @@
+Vector de distorsiones: = [[ 0.08837871 -0.76986429 -0.01046476 -0.00247916  1.65713824]]
+
+
+Matriz de la cámara: = [[1.63215652e+03 0.00000000e+00 9.75201366e+02]
+                        [0.00000000e+00 1.63222699e+03 5.12214741e+02]
+                        [0.00000000e+00 0.00000000e+00 1.00000000e+00]]
+                        
+Imagen de referencia: 30.jpg
+
+Vector de rotación de esa imagen: [[-0.39560589]
+                                   [-0.37068119]
+                                   [-0.96084082]]
+                                   
+Vector de traslación de esa imagen: [[-5.09278083]
+                                     [ 0.80665363]
+                                     [15.57214212]]                                   
+                                     
+Dado que la matriz de la camara ya tiene los valores fx, fy y son idénticos así que la distancia focal F es  1.63222699e+03
+
+Por ende la matriz de proyección P es:
+
+[[1.63222699e+03 0.000000000000 0 0]
+ [0 .00000000000 1.63222699e+03 0 0]
+ [0.000000000000 0.000000000000 1 0]]
+ 
+ 
