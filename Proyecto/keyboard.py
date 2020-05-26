@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import RPi.GPIO as GPIO          
 from time import sleep
-from __future__ import print_function
+import __future__ 
 
 import roslib; roslib.load_manifest('teleop_twist_keyboard')
 import rospy
@@ -136,7 +136,7 @@ if __name__=="__main__":
                 th = moveBindings[key][3]
 
                 #move forward
-                if key == 'u':
+                if key == 'i':
                     print("forward")
                     GPIO.output(in1,GPIO.HIGH)
                     GPIO.output(in2,GPIO.LOW)
@@ -176,10 +176,6 @@ if __name__=="__main__":
                     GPIO.output(in4,GPIO.LOW)
                     temp1=0
                     
-
-
-
-
 
                     
             elif key in speedBindings.keys():
