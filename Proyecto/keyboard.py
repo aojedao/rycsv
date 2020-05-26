@@ -43,7 +43,9 @@ p=GPIO.PWM(en1,500)
 p2=GPIO.PWM(en2,1000)
 p.start(25)
 p2.start(25)
-  
+
+p.ChangeDutyCycle(55)
+p2.ChangeDutyCycle(75)
 
 
 msg = """
@@ -132,6 +134,54 @@ if __name__=="__main__":
                 y = moveBindings[key][1]
                 z = moveBindings[key][2]
                 th = moveBindings[key][3]
+
+                #move forward
+                if key == 'u':
+                    print("forward")
+                    GPIO.output(in1,GPIO.HIGH)
+                    GPIO.output(in2,GPIO.LOW)
+                    
+                    GPIO.output(in3,GPIO.HIGH)
+                    GPIO.output(in4,GPIO.LOW)
+                    temp1=1
+                    
+
+                #move backward
+                if key == 'k':
+                    print("backward")
+                    GPIO.output(in1,GPIO.LOW)
+                    GPIO.output(in2,GPIO.HIGH)
+                    
+                    GPIO.output(in3,GPIO.LOW)
+                    GPIO.output(in4,GPIO.HIGH)
+                    temp1=0
+
+                #move right
+                if key == 'l':
+                    print("turn right")
+                    GPIO.output(in1,GPIO.HIGH)
+                    GPIO.output(in2,GPIO.LOW)
+                    
+                    GPIO.output(in3,GPIO.LOW)
+                    GPIO.output(in4,GPIO.HIGH)
+                    temp1=0
+
+                #move left
+                if key == 'j':
+                    print("turn left")
+                    GPIO.output(in1,GPIO.LOW)
+                    GPIO.output(in2,GPIO.HIGH)
+                    
+                    GPIO.output(in3,GPIO.HIGH)
+                    GPIO.output(in4,GPIO.LOW)
+                    temp1=0
+                    
+
+
+
+
+
+                    
             elif key in speedBindings.keys():
                 speed = speed * speedBindings[key][0]
                 turn = turn * speedBindings[key][1]
