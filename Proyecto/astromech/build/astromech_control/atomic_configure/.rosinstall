@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /root/astromech/devel/.private/astromech_control/setup.sh

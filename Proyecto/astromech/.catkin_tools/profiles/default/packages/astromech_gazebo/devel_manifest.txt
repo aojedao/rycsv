@@ -1,0 +1,5 @@
+astromech_gazebo
+/root/astromech/devel/.private/astromech_gazebo/cmake.lock /root/astromech/devel/./cmake.lock
+/root/astromech/devel/.private/astromech_gazebo/share/astromech_gazebo/cmake/astromech_gazeboConfig-version.cmake /root/astromech/devel/share/astromech_gazebo/cmake/astromech_gazeboConfig-version.cmake
+/root/astromech/devel/.private/astromech_gazebo/share/astromech_gazebo/cmake/astromech_gazeboConfig.cmake /root/astromech/devel/share/astromech_gazebo/cmake/astromech_gazeboConfig.cmake
+/root/astromech/devel/.private/astromech_gazebo/lib/pkgconfig/astromech_gazebo.pc /root/astromech/devel/lib/pkgconfig/astromech_gazebo.pc

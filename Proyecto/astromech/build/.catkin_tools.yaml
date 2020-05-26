@@ -1,0 +1,6 @@
+devel_space: /root/astromech/devel
+install: false
+install_space: /root/astromech/install
+profile: default
+source_space: /root/astromech/src
+workspace: /root/astromech

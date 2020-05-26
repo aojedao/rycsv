@@ -1,0 +1,3 @@
+Symlinking /root/astromech/devel/share/astromech_control/cmake/astromech_controlConfig-version.cmake
+Symlinking /root/astromech/devel/share/astromech_control/cmake/astromech_controlConfig.cmake
+Symlinking /root/astromech/devel/lib/pkgconfig/astromech_control.pc

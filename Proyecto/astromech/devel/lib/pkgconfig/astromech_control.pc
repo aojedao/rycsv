@@ -1,0 +1,1 @@
+/root/astromech/devel/.private/astromech_control/lib/pkgconfig/astromech_control.pc

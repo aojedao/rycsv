@@ -1,0 +1,1 @@
+/root/astromech/devel/.private/astromech_gazebo/lib/pkgconfig/astromech_gazebo.pc

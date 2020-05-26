@@ -1,0 +1,8 @@
+prefix=/root/astromech/devel/.private/astromech_control
+
+Name: astromech_control
+Description: Description of astromech_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

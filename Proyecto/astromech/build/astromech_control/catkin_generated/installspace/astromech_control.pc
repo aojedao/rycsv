@@ -1,0 +1,8 @@
+prefix=/root/astromech/install
+
+Name: astromech_control
+Description: Description of astromech_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

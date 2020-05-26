@@ -1,0 +1,12 @@
+Symlinking /root/astromech/devel/./_setup_util.py
+Symlinking /root/astromech/devel/./env.sh
+Symlinking /root/astromech/devel/./local_setup.zsh
+Symlinking /root/astromech/devel/./local_setup.sh
+Symlinking /root/astromech/devel/./setup.zsh
+Symlinking /root/astromech/devel/./local_setup.bash
+Symlinking /root/astromech/devel/./cmake.lock
+Symlinking /root/astromech/devel/./setup.bash
+Symlinking /root/astromech/devel/./setup.sh
+Symlinking /root/astromech/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
+Symlinking /root/astromech/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /root/astromech/devel/lib/pkgconfig/catkin_tools_prebuild.pc

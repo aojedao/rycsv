@@ -1,0 +1,3 @@
+Symlinking /root/astromech/devel/share/astromech_gazebo/cmake/astromech_gazeboConfig-version.cmake
+Symlinking /root/astromech/devel/share/astromech_gazebo/cmake/astromech_gazeboConfig.cmake
+Symlinking /root/astromech/devel/lib/pkgconfig/astromech_gazebo.pc

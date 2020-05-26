@@ -1,0 +1,8 @@
+prefix=/root/astromech/devel/.private/astromech_description
+
+Name: astromech_description
+Description: Description of astromech_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

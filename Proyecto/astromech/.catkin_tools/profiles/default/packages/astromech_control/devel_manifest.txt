@@ -1,0 +1,5 @@
+astromech_control
+/root/astromech/devel/.private/astromech_control/cmake.lock /root/astromech/devel/./cmake.lock
+/root/astromech/devel/.private/astromech_control/share/astromech_control/cmake/astromech_controlConfig-version.cmake /root/astromech/devel/share/astromech_control/cmake/astromech_controlConfig-version.cmake
+/root/astromech/devel/.private/astromech_control/share/astromech_control/cmake/astromech_controlConfig.cmake /root/astromech/devel/share/astromech_control/cmake/astromech_controlConfig.cmake
+/root/astromech/devel/.private/astromech_control/lib/pkgconfig/astromech_control.pc /root/astromech/devel/lib/pkgconfig/astromech_control.pc
