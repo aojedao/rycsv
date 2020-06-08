@@ -9,7 +9,7 @@
       <updateRate>20</updateRate>
       <leftJoint>left_wheel_hinge</leftJoint>
       <rightJoint>right_wheel_hinge</rightJoint>
-      <wheelSeparation>0.0044</wheelSeparation>
+      <wheelSeparation>0.00827</wheelSeparation>
       <wheelDiameter>0.00277</wheelDiameter>
       <torque>20</torque>
       <commandTopic>cmd_vel</commandTopic>

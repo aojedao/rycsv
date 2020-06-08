@@ -6,14 +6,14 @@
 
   <xacro:include filename="$(find astromech_description)/urdf/astromech.gazebo" />
   <!--xacro:include filename="$(find astromech_description)/urdf/materials.xacro" /-->
-  <xacro:include filename="$(find astromech_description)/urdf/macros.xacro"/> 
+  <!--xacro:include filename="$(find astromech_description)/urdf/macros.xacro"/--> 
   
 
 
   <link name='chassis'>
-    <pose>0 0 0.0081 0 0 0</pose>
+    <pose>0 0 0.0081 0 0 0</pose >
     <inertial>
-      <mass value="4"/>
+      <mass value="1"/>
       <origin xyz="0.0 0 0.0081" rpy=" 0 0 0"/>
       <inertia
           ixx="0.0001" ixy="0" ixz="0"
@@ -23,6 +23,7 @@
     </inertial>
 
     <collision name='collision'>
+      <origin xyz="0 0 0.0081" rpy=" 0 0 0"/>
       <geometry>
         <box size="0.003 0.00687 0.0032"/>
       </geometry>
@@ -105,19 +106,19 @@
   <link name="left_wheel">
     <!--origin xyz="0 -188 0.035" rpy="0 1.5707 1.5707"/-->
     <collision name="collision">
-      <origin rpy="0 1.5707 1.5707" xyz="0.009 -0.00257 0.000385"/>
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
         <cylinder length=".001" radius=".001385"/>
       </geometry>
     </collision>
     <visual name="left_wheel_visual">
-      <origin rpy="0 1.5707 1.5707" xyz="0.009 -0.00257 0.000385"/>
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
         <cylinder length=".001" radius=".001385"/>
       </geometry>
     </visual>
     <inertial>
-      <origin rpy="0 1.5707 1.5707" xyz="0.009 -0.00257 0.000385"/>
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <mass value="0.001"/>
       <cylinder_inertia m="0.01" r="0.001385" h="0.001"/>
       <inertia
@@ -130,19 +131,19 @@
   <link name="right_wheel">
     <!--origin xyz="0 188 0.035" rpy="0 1.5707 1.5707"/-->
     <collision name="collision">
-      <origin rpy="0 1.5707 1.5707" xyz="0.009 0.00257 0.000385"/>
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
         <cylinder length=".001" radius=".001385"/>
       </geometry>
     </collision>
     <visual name="right_wheel_visual">
-      <origin rpy="0 1.5707 1.5707" xyz="0.009 0.00257 0.000385"/>
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
         <cylinder length=".001" radius=".001385"/>
       </geometry>
     </visual>
     <inertial>
-      <origin rpy="0 1.5707 1.5707" xyz="0.009 0.00257 0.000385"/>
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <mass value="0.001"/>
       <cylinder_inertia m="0.01" r="0.001385" h="0.001"/>
       <inertia
@@ -166,7 +167,7 @@
 
 
   <joint type="continuous" name="left_wheel_hinge">
-    <origin xyz="0.009 0.00257 0.000385" rpy="0 0 0"/>
+    <origin xyz="0.009 -0.00447 0.000385" rpy="0 0 0"/>
     <child link="left_wheel"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
@@ -175,7 +176,7 @@
   </joint>
 
   <joint type="continuous" name="right_wheel_hinge">
-    <origin xyz="0.009 0.00257 0.000385" rpy="0 0 0"/>
+    <origin xyz="0.009 0.00447 0.000385" rpy="0 0 0"/>
     <child link="right_wheel"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
