@@ -1,0 +1,4 @@
+/usr/local/bin/cmake -S/root/catkin_ws/src/chase_object/build/catkin_tools_prebuild -B/root/catkin_ws/src/chase_object/build/catkin_tools_prebuild --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/local/bin/cmake -E cmake_progress_start /root/catkin_ws/src/chase_object/build/catkin_tools_prebuild/CMakeFiles /root/catkin_ws/src/chase_object/build/catkin_tools_prebuild//CMakeFiles/progress.marks
+/usr/bin/make -s -f CMakeFiles/Makefile2 all
+/usr/local/bin/cmake -E cmake_progress_start /root/catkin_ws/src/chase_object/build/catkin_tools_prebuild/CMakeFiles 0

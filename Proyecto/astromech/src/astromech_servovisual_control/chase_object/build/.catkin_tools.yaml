@@ -1,0 +1,6 @@
+devel_space: /root/catkin_ws/src/chase_object/devel
+install: false
+install_space: /root/catkin_ws/src/chase_object/install
+profile: default
+source_space: /root/catkin_ws/src/chase_object/src
+workspace: /root/catkin_ws/src/chase_object
