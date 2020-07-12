@@ -7,7 +7,20 @@
   <xacro:include filename="$(find astromech_description)/urdf/astromech.gazebo" />
   <!--xacro:include filename="$(find astromech_description)/urdf/materials.xacro" /-->
   <!--xacro:include filename="$(find astromech_description)/urdf/macros.xacro"/--> 
-  
+  <xacro:include filename="$(find astromech_description)/urdf/astromech.cameraplugin.xacro" />
+  <!--xacro:include filename="$(find astromech_description)/urdf/materials.xacro" /-->
+  <xacro:include filename="$(find astromech_description)/urdf/macros.xacro"/> 
+  <xacro:property name="camera_size" value="0.02"/>
+  <xacro:property name="camera_origin_x" value="0.065"/>
+  <xacro:property name="camera_origin_y" value="0"/>
+  <xacro:property name="camera_origin_z" value="0.025"/>
+
+	<xacro:macro name="default_inertial" params="mass">
+    <inertial>
+      <mass value="${mass}"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </xacro:macro>
 
 
   <link name='chassis'>
@@ -183,7 +196,27 @@
     <limit effort="100" velocity="100"/>
     <joint_properties damping="0.0" friction="0.0"/>
   </joint>
+<!--Camera-->
+  <link name="camera">
+    <visual>
+      <geometry>
+        <box size="${camera_size} ${camera_size} ${camera_size}"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="${camera_size} ${camera_size} ${camera_size}"/>
+      </geometry>
+    </collision>
+    <xacro:default_inertial mass="0.02"/>
+  </link>
 
+  <joint name="camera_joint" type="fixed">
+    <origin xyz="${camera_origin_x} ${camera_origin_y} ${camera_origin_z}" rpy="0 0 0"/>
+    <parent link="chassis"/>
+    <child link="camera"/>
+  </joint>
 
 
 
